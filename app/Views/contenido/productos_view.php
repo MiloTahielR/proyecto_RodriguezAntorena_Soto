@@ -103,6 +103,61 @@
          </div>
         </div>
 
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-0">
+           <img src="assets/img/arito2.jpg" class="card-img-top hover-zoom" alt="Diseño 6">
+            <div class="card-body text-center">
+              <h5 class="card-title text-decoration-none">AROS</h5>
+               <p class="parrafo-precios-card">$4000,00</p>
+              <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
+            </div>
+         </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-0">
+           <img src="assets/img/arito3.jpg" class="card-img-top hover-zoom" alt="Diseño 6">
+            <div class="card-body text-center">
+              <h5 class="card-title text-decoration-none">AROS</h5>
+               <p class="parrafo-precios-card">$4000,00</p>
+              <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
+            </div>
+         </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-0">
+           <img src="assets/img/arito5.jpg" class="card-img-top hover-zoom" alt="Diseño 6">
+            <div class="card-body text-center">
+              <h5 class="card-title text-decoration-none">AROS</h5>
+               <p class="parrafo-precios-card">$4000,00</p>
+              <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
+            </div>
+         </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-0">
+           <img src="assets/img/arito6.jpg" class="card-img-top hover-zoom" alt="Diseño 6">
+            <div class="card-body text-center">
+              <h5 class="card-title text-decoration-none">AROS</h5>
+               <p class="parrafo-precios-card">$4000,00</p>
+              <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
+            </div>
+         </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-0">
+           <img src="assets/img/arito8.jpg" class="card-img-top hover-zoom" alt="Diseño 6">
+            <div class="card-body text-center">
+              <h5 class="card-title text-decoration-none">AROS</h5>
+               <p class="parrafo-precios-card">$4000,00</p>
+              <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
+            </div>
+         </div>
+        </div>
+        
         </div>
       </div>
 
@@ -112,11 +167,22 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- Cards de otros -->
 
-          <div class="col-md-4">
+        <div class="col-md-4">
         <div class="card h-100 border-0 rounded-0">
           <img src="assets/img/3colPanterNana.jpg" class="card-img-top hover-zoom" alt="Diseño 4">
           <div class="card-body text-center">
             <h5 class="card-title text-decoration-none">PANTER NANA</h5>
+            <p class="parrafo-precios-card">$20000,00</p>
+            <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 rounded-0">
+          <img src="assets/img/nosotros2.jpg" class="card-img-top hover-zoom" alt="Diseño 4">
+          <div class="card-body text-center">
+            <h5 class="card-title text-decoration-none">BRAZALETE</h5>
             <p class="parrafo-precios-card">$15000,00</p>
             <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
           </div>
@@ -128,7 +194,7 @@
           <img src="assets/img/2col saiki.jpg" class="card-img-top hover-zoom" alt="Diseño 2">
           <div class="card-body text-center">
             <h5 class="card-title text-decoration-none">SAIKI</h5>
-            <p class="parrafo-precios-card">$18000,00</p>
+            <p class="parrafo-precios-card">$20000,00</p>
             <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
           </div>
         </div>
