@@ -1,0 +1,37 @@
+<section class="container my-5" id="nosotros">
+  <!-- Fila 1 -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 text-center">
+      <img src="assets/img/nosotros1.jpg" alt="Nosotros 1" class=" img-nosotros rounded-3 img-fluid img-move">
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <p class="texto-nosotros">
+      Skorial es un Emprendimiento de diseño de autor de accesorios e intervención textil. Realizamos diseños artesanales hechos a mano y de vanguardia, para obtener piezas únicas de gran durabilidad y con estilo.
+      </p>
+    </div>
+  </div>
+
+  <!-- Fila 2 -->
+  <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6 text-center">
+      <img src="assets/img/nosotros2.jpg" alt="Nosotros 2" class=" img-nosotros rounded-3 img-fluid">
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <p class="texto-nosotros">
+      Iniciamos en 2021, en un pequeño taller realizando collares a pedido. Con los años logramos expandirnos, y logramos incorporar nuevos accesorios, con diversos materiales y formas, para imponer nuevas ideas de moda y diseño actuales.
+      </p>
+    </div>
+  </div>
+
+  <!-- Fila 3 -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 text-center">
+      <img src="assets/img/nosotros3.jpg" alt="Nosotros 3" class=" img-nosotros rounded-3 img-fluid img-zoom">
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <p class="texto-nosotros">
+      Actualmente contamos con diversas colecciones por temporada, realizamos pedidos de diseños personalizados, y contamos con venta online minorista con envío a todo el país.
+      </p>
+    </div>
+  </div>
+</section>
