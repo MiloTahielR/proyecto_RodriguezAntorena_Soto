@@ -6,7 +6,7 @@
     </div>
     <div class="col-md-6 d-flex justify-content-center">
       <p class="texto-nosotros">
-      Skorial es un Emprendimiento de diseño de autor de accesorios e intervención textil. Realizamos diseños artesanales hechos a mano y de vanguardia, para obtener piezas únicas de gran durabilidad y con estilo.
+      Skorial es un emprendimiento de diseño de autor de Accesorios. Realizamos productos artesanales, hechos a medida y de vanguardia, obteniendo piezas únicas de gran durabilidad y con estilo. Nuestro equipo está compuesto por tres diseñadores y artistas visuales de Corrientes Capital, Argentina.
       </p>
     </div>
   </div>
@@ -30,7 +30,7 @@
     </div>
     <div class="col-md-6 d-flex justify-content-center">
       <p class="texto-nosotros">
-      Actualmente contamos con diversas colecciones por temporada, realizamos pedidos de diseños personalizados, y contamos con venta online minorista con envío a todo el país.
+      Actualmente contamos con diversas colecciones por temporada, y realizamos pedidos de diseños personalizados para artistas, eventos culturales, performers y mucho más. Nuestros productos pueden adquirirse mediante venta Online minorista, con envío a todo el país.
       </p>
     </div>
   </div>

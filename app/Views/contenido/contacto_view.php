@@ -43,7 +43,12 @@
       <!-- Columna izquierda -->
       <div class="col-md-6 d-flex flex-column justify-content-center div-contacto1">
         <ul class="list-group mb-2">
-          
+
+        <ul class="list-group">
+      <li class="list-group-item disabled" aria-disabled="true">
+        <i class="fas fa-user"></i> 
+        Titular: Milo Rodriguez. Razon social: "Skorial Coop"
+      </li>
           <li class="list-group-item disabled" aria-disabled="true">
             <i class="fas fa-map-marker-alt"></i> 
             Dirección: Av. Juan Torres de Vera y Aragon 1597, W3400BJE Corrientes

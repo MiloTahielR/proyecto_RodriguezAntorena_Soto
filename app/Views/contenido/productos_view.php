@@ -1,6 +1,6 @@
 <section class="container-fluid my-5">
   <div class="row">
-    <!-- Sidebar de Categorías -->
+    <!-- Barra de navegacion de Categorías -->
     <div class="col-md-3">
       <h6 class="mb-3 text-uppercase">CATEGORÍAS</h6>
       <div class="list-group categorias">
@@ -16,7 +16,7 @@
       <div id="collares" class="categoria-grid mb-5">
         <h4 class="mb-4 Skorial_Abel">COLLARES</h4>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- Card 1 COLLAR TAIO -->
+          <!-- Cards COLLARES -->
           <div class="col-md-4">
         <div class="card h-100 border-0 rounded-0">
           <img src="assets/img/3colTaio.jpg" class="card-img-top hover-zoom" alt="Diseño 5">
@@ -83,7 +83,7 @@
         </div>
       </div>
     </div>
-          <!-- Más cards... -->
+          
         </div>
       </div>
 
@@ -197,6 +197,7 @@
             <p class="parrafo-precios-card">$20000,00</p>
             <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
           </div>
+
         </div>
       </div>
         </div>
