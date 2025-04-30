@@ -54,7 +54,7 @@ h3, .Skorial_titulo {
 /*PARA UNA ANIMACION CON KEYFRAMES EN EL TITULO*/
 @keyframes latido {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.03); }
+  50% { transform: scale(4); }
 }
 .titulo-animado {
   animation: latido 2.5s ease-in-out infinite;
