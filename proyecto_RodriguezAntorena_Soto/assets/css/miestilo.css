@@ -1,0 +1,158 @@
+
+ .Skorial_Abel  {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ .Skorial_titulo_SyneMono  {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: beige;
+}
+
+h3, .Skorial_titulo {
+  font-weight: lighter;
+  font-size: small;
+  display: relative; 
+}
+.new-collection-div {
+ position: relative;
+ display: flex;
+ padding: 10px;
+ margin:20px;
+}
+/*PARA LOS CAMBIOS EN INICIO*/
+.card-title{
+  font-size: small;
+  font-weight:100;
+}
+
+.hover-zoom {
+  transition: transform 0.4s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.4s ease;
+}
+.parrafo-precios-card{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.card-title{
+  font-weight: bold;
+}
+/*PARA UNA ANIMACION CON KEYFRAMES EN EL TITULO*/
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.titulo-animado {
+  animation: latido 2.5s ease-in-out infinite;
+}
+
+/*PARA LOS CAMBIOS EN NOSOTROS*/
+.texto-nosotros {
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 1.5rem;
+  font-family: "Abel", sans-serif;
+}
+
+.img-move {
+  transition: transform 0.5s ease;
+}
+
+.img-move:hover {
+  transform: translateX(20px); 
+}
+
+/* Imagen con efecto de zoom al pasar el mouse en las CARDS */
+.img-zoom {
+  transition: transform 0.5s ease;
+}
+
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+.img-nosotros{
+ width:75%;
+ height:75%;
+}
+/* Para mi sector de PRODUCTOS, agrego efectos en el hover del listgroup  */
+.categorias .categoria {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+.categorias .categoria:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transform: scale(1.05);
+  color: #000;
+}
+
+.categorias .categoria.active {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+/* Para mi sector de CONTACTOS */
+.mi-panel .list-group-item{
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  color: #000000;
+  text-emphasis-color: rgb(0, 0, 0); 
+
+  }
+
+  .h4-contacto {
+    font-size: 25px;
+  }
+  
+  .form-label{
+    font-size: 20px;
+  }
+
+  .div-contacto1{
+    border-color: rgb(0, 0, 0);
+  }
+
+  .section-termUso{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    text-align: justify;
+  
+    padding:2%;
+  }
+
+  .navbar-paginas{
+    font-size: 20px;
+    color: rgb(251, 254, 254);
+  }
+
+  nav {
+    font-size: 20px;
+    width: 100%;
+    --bs-gutter-x: 0;
+  }
+  .nav-principal{
+    width: 100%;
+  }
+
+  
