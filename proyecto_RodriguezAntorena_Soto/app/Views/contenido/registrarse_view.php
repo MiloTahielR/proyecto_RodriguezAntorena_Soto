@@ -18,17 +18,11 @@
     echo session('registro_mensaje');
 }?>
 
-<?php echo form_open('registrar_usuario'); ?>
+<?php echo form_open('registrar_usuario'); ?> 
  <div class=" mt-3 mb-3 mx-auto bs-dark-border-subtle Skorial_Abel"  style= "max-width: 50rem  ">
 
   <div class="p-3 bs-tertiary-bg-rgb ">
      <h4 class="h4-contacto">NUEVO USUARIO- REGISTRARSE.</h4>
- 
-
-  <div class="mt-3 mb-3">
-    <label for="correo" class="form-label">Direccion de Email</label>
-    <input type="email" class="form-control" id="correo" placeholder="name@example.com">
-  </div>
 
   <div class=" mb-3">
     <label for="nombre" class="form-label">Nombre</label>
@@ -38,6 +32,21 @@
   <div class=" mb-3">
     <label for="apellido" class="form-label">Apellido</label>
     <?php echo form_input( ['name' => 'apellido', 'id' => 'apellido','type'=> 'text','class'=>'form-control', 'rows'=>'3', 'placeholder' => 'Apellido', 'value'=> set_value('apellido')]);?>
+  </div>
+
+  <div class=" mb-3">
+    <label for="dni" class="form-label">Dni</label>
+    <?php echo form_input( ['name' => 'dni', 'id' => 'dni','type'=> 'text','class'=>'form-control', 'rows'=>'3', 'placeholder' => 'Ingrese DNI', 'value'=> set_value('dni')]);?>
+  </div>
+
+  <div class=" mb-3">
+    <label for="telefono" class="form-label">Telefono</label>
+    <?php echo form_input( ['name' => 'telefono', 'id' => 'telefono','type'=> 'text','class'=>'form-control', 'rows'=>'3', 'placeholder' => 'Ingrese su número de teléfono', 'value'=> set_value('telefono')]);?>
+  </div>
+
+  <div class="mt-3 mb-3">
+    <label for="correo" class="form-label">Direccion de Email</label>
+     <?php echo form_input( ['name' => 'correo', 'id' => 'correo','type'=> 'email','class'=>'form-control', 'rows'=>'3', 'placeholder' => 'Ingrese su dirección de email', 'value'=> set_value('correo')]);?>
   </div>
 
   <div class=" mb-3">

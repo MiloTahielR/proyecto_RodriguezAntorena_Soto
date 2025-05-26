@@ -1,11 +1,9 @@
-
 <?php
-
 namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class registro_usuario_Model extends Model
 {
     protected $table      = 'registrousuario';
     protected $primaryKey = 'id_usuario';
@@ -13,9 +11,9 @@ class UserModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nombre_usuario','apellido_usuario','correo_usuario','id_perfil','contraseña_usuario','dni_usuario','telefono_usuario'];
+    protected $allowedFields = ['id_perfil','nombre_usuario','apellido_usuario','dni_usuario','telefono_usuario','correo_usuario','contraseña_usuario', 'estado_usuario'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

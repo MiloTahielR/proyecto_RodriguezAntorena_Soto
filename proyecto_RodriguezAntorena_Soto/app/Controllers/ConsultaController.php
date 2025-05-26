@@ -83,11 +83,12 @@ public function add_usuario()
     [
          'nombre' => 'required|max_length[150]',
          'apellido' => 'required|max_length[150]',
+         'dni' => 'required|max_length[8]|min_length[8]|is_natural',
+         'telefono' => 'required|min_length[10]|is_natural',
          'correo' => 'required|valid_email|is_unique[registrousuario.correo_usuario]', 
          'contrasenia' => 'required|min_length[8]',
-         'validar_contrasenia' => 'required|min_length[8]|matches[contrasenia]',
-         'telefono' => 'required|min_length[10]|is_natural',
-         'dni' => 'required|max_length[8]|min_length[8]|is_natural'
+         'validar_contrasenia' => 'required|min_length[8]|matches[contrasenia]'
+         
     ],
     [   // Errors
         'nombre' => [
@@ -101,7 +102,8 @@ public function add_usuario()
 
          'correo' => [
             'required' => 'El correo electrónico es obligatorio',
-            'valid_email' => 'La dirección de correo debe ser válida'
+            'valid_email' => 'La dirección de correo debe ser válida',
+            'is_unique'=> 'El correo electrónico ya está registrado, intente con otro correo válido'
                 ],
 
          'contrasenia' => [
@@ -135,11 +137,10 @@ public function add_usuario()
         //'correo_consultas','texto_consultas','motivo_consultas'
         'nombre_usuario' => $request->getPost('nombre'),
         'apellido_usuario' => $request->getPost('apellido'),
-        'correo_usuario ' => $request->getPost('correo'),
-        'id_perfil'=> 2,
-        'contraseña_usuario' => password_hash($request->getPost('contrasenia'),PASSWORD_BCRYPT),
         'dni_usuario' => $request->getPost('dni'),
         'telefono_usuario' => $request->getPost('telefono'),
+        'correo_usuario ' => $request->getPost('correo'),
+        'contraseña_usuario' => password_hash($request->getPost('contrasenia'),PASSWORD_BCRYPT),
         'estado_usuario'=> 1
          
             ];
@@ -147,7 +148,7 @@ public function add_usuario()
                $usuarioRegistro = new registro_usuario_Model();
                $usuarioRegistro->insert($data);
 
-              return redirect()->route('registrar_usuario')->with('registro_mensaje', 'Su registro se envió exitosamente!');
+              return redirect()->route('registro_usuario')->with('registro_mensaje', 'Su registro se envió exitosamente!');
                         
                 }else{
 
