@@ -56,8 +56,15 @@ class Home extends BaseController
     {   
         $data['titulo']= "Iniciar sesion";
         return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/iniciarSesion_view.php').view('Views/plantillas/footer_view.php'); 
-                                                                                                                         
+                        
     }
+
+    /*public function login()
+    {   
+        $data['titulo']= "Login";
+        return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/inicio_view.php').view('Views/plantillas/footer_view.php'); 
+                                                                                                                         
+    }*/
 
 }
 

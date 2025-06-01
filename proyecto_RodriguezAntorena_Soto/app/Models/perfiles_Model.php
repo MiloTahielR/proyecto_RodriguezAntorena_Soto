@@ -4,7 +4,7 @@
     
     use CodeIgniter\Model;
     
-    class UserModel extends Model
+    class Perfiles_Model extends Model
     {
         protected $table      = 'perfiles';
         protected $primaryKey = 'id_perfil';
@@ -14,7 +14,7 @@
         protected $returnType     = 'array';
         protected $useSoftDeletes = true;
     
-        protected $allowedFields = ['tipo_perfil','estado'];
+        protected $allowedFields = ['tipo_perfil'];
     
         protected bool $allowEmptyInserts = false;
         protected bool $updateOnlyChanged = true;

@@ -1,7 +1,6 @@
-
 <nav class="navbar navbar-expand-lg navbar-light px-3 bg-dark Skorial_Abel text-white">
   <!-- Marca o logo -->
-  <a class="navbar-brand navbar-paginas text-light" href="<?php echo base_url('');?>">Inicio</a>
+  <a class="navbar-brand navbar-paginas text-light" href="<?php echo base_url('');?>">Administrador</a>
 
   <!-- Botón hamburguesa -->
   <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,52 +45,10 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="<?php echo base_url('registro_usuario');?>">Registrarse </a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('login_cliente');?>">Ingresar</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('iniciarSesion');?>">Ingresar</a></li>
              
             </ul>
           </li>
 
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<?php if (session('login_session')) {
- ?>  
         <li class="nav-item">
-          <a class="nav-link navbar-paginas text-light" href="ver_carrito"><i class="fas fa-shopping-cart"></i> Carrito</a>
-        </li>
- 
-        <li class="nav-item">
-          <a class="nav-link navbar-paginas text-light" href="#" ><?php echo session('apellido'); ?> </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link navbar-paginas text-light" href="logout" > Salir</a>
-         </li>
-  </li>
-</div>
- <?php } else {
-   ?> 
-         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        
-       <a class="nav-link dropdown-toggle navbar-paginas text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mi cuenta
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="<?php echo base_url('registro_usuario');?>">Registrarse </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="<?php echo base_url('login_cliente');?>">Ingresar</a>
-              </li>
-             
-            </ul>
-
-      </ul>
-
-      </li>
-
-</div>
-   <?php
- }
+          <a class="nav-link navbar-paginas text-light" href="#"><i class="fas fa-shopping-cart"></i> Carrito</a>

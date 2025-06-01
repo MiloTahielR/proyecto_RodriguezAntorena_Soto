@@ -16,10 +16,18 @@ $routes->get('terminos', 'Home::termUso');
 //$routes->post('contactos', 'Form::contacto') //en index iria contacto creo
 
 $routes->get('consultas', 'Home::consultas');
-$routes->post('consulta_mensaje', 'ConsultaController::add_consulta');
+$routes->post('consulta_mensaje', 'UsuarioController::add_consulta');
 
 $routes->get('registro_usuario', 'Home::registrarse');
-$routes->post('registrar_usuario', 'ConsultaController::add_usuario');
+$routes->post('registrar_usuario', 'UsuarioController::add_usuario');
 
-$routes->get('iniciarSesion', 'Home::iniciarSesion');
+
+//$routes->post('inicio_sesion', 'UsuarioController::buscar_usuario');
+$routes->get('login_cliente', 'Home::iniciarSesion');
+$routes->post('verificar_usuario', 'UsuarioController::buscar_usuario');
+$routes->get('logout', 'UsuarioController::cerrar_sesion');
+$routes->post('user_admin', 'UsuarioController::admin');
+
+
+
 

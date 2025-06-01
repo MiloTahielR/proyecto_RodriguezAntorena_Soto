@@ -1,0 +1,314 @@
+DEBUG - 2025-05-26 13:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 13:19:44 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: POST, Route: consulta_mensaje]
+in APPPATH\Models\Consulta_Model.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-05-26 13:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 13:36:11 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: POST, Route: consulta_mensaje]
+in APPPATH\Models\Consulta_Model.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-05-26 13:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 13:40:37 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: POST, Route: consulta_mensaje]
+in APPPATH\Models\Consulta_Model.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-26 13:40:41 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: POST, Route: consulta_mensaje]
+in APPPATH\Models\Consulta_Model.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-05-26 13:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 13:41:02 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: POST, Route: consulta_mensaje]
+in APPPATH\Models\Consulta_Model.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-05-26 13:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 13:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 13:58:17 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: POST, Route: consulta_mensaje]
+in APPPATH\Models\Consulta_Model.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-05-26 13:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 13:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 14:39:33 --> Error: Class "App\Models\registro_usuario_Model" not found
+[Method: POST, Route: registrar_usuario]
+in APPPATH\Controllers\ConsultaController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-26 14:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-26 14:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-26 14:44:44 --> Error: Class "App\Models\registro_usuario_Model" not found
+[Method: POST, Route: registrar_usuario]
+in APPPATH\Controllers\ConsultaController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-26 14:45:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`)) in C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\app\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+#9 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#10 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-26 14:45:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+[Method: POST, Route: registrar_usuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:id_perfil:, :nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 14:45:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$SuZlv0qd3t6BBvPAqXUoeumvv4o/4jHGg7Cp1bWQvPrqHxoAkttiW\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$SuZlv0qd3t6BBvPAqXUoeumvv4o/4jHGg7Cp1bWQvPrqHxoAkttiW\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:id_perfil:, :nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 14:45:08 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$SuZlv0qd3t6BBvPAqXUoeumvv4o/4jHGg7Cp1bWQvPrqHxoAkttiW\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$SuZlv0qd3t6BBvPAqXUoeumvv4o/4jHGg7Cp1bWQvPrqHxoAkttiW\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$SuZlv0qd3t6BBvPAqXUoeumvv4o/4jHGg7Cp1bWQvPrqHxoAkttiW\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:id_perfil:, :nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-26 14:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-26 14:46:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`)) in C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\app\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+#9 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#10 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-26 14:46:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+[Method: POST, Route: registrar_usuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:id_perfil:, :nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 14:46:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$OAYuqw148eoeSwuUD2fAFukzyS1PnlAkfQXsxMkww5z4F33flTkxS\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$OAYuqw148eoeSwuUD2fAFukzyS1PnlAkfQXsxMkww5z4F33flTkxS\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:id_perfil:, :nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 14:46:32 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$OAYuqw148eoeSwuUD2fAFukzyS1PnlAkfQXsxMkww5z4F33flTkxS\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$OAYuqw148eoeSwuUD2fAFukzyS1PnlAkfQXsxMkww5z4F33flTkxS\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (2, \'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$OAYuqw148eoeSwuUD2fAFukzyS1PnlAkfQXsxMkww5z4F33flTkxS\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`id_perfil`, `nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:id_perfil:, :nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ConsultaController.php(150): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-26 14:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-26 14:50:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`)) in C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\app\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+#9 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#10 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-26 14:50:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+[Method: POST, Route: registrar_usuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 14:50:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$5wMCMpPykxVhTRdEjAWaN.i.X2fazkEdJtMlfxzPjK74JtpwYK8F6\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$5wMCMpPykxVhTRdEjAWaN.i.X2fazkEdJtMlfxzPjK74JtpwYK8F6\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 14:50:55 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$5wMCMpPykxVhTRdEjAWaN.i.X2fazkEdJtMlfxzPjK74JtpwYK8F6\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$5wMCMpPykxVhTRdEjAWaN.i.X2fazkEdJtMlfxzPjK74JtpwYK8F6\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$5wMCMpPykxVhTRdEjAWaN.i.X2fazkEdJtMlfxzPjK74JtpwYK8F6\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-26 15:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-26 15:23:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`)) in C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\app\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+#9 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#10 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\proyecto_RodriguezAntorena_Soto\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-26 15:23:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+[Method: POST, Route: registrar_usuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 15:23:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$FnGnWzqYAauDepSA4M0bBOewE3RrcdLPIdrZHhP3iGnVigYFPMWry\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$FnGnWzqYAauDepSA4M0bBOewE3RrcdLPIdrZHhP3iGnVigYFPMWry\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-26 15:23:08 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_rodriguezantorenasoto`.`registrousuario`, CONSTRAINT `registrousuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$FnGnWzqYAauDepSA4M0bBOewE3RrcdLPIdrZHhP3iGnVigYFPMWry\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$FnGnWzqYAauDepSA4M0bBOewE3RrcdLPIdrZHhP3iGnVigYFPMWry\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (\'Milo Tahiel\', \'Antorena\', \'41281778\', \'0379154916511\', \'$2y$10$FnGnWzqYAauDepSA4M0bBOewE3RrcdLPIdrZHhP3iGnVigYFPMWry\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registrousuario` (`nombre_usuario`, `apellido_usuario`, `dni_usuario`, `telefono_usuario`, `contraseña_usuario`, `estado_usuario`) VALUES (:nombre_usuario:, :apellido_usuario:, :dni_usuario:, :telefono_usuario:, :contraseña_usuario:, :estado_usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ConsultaController.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ConsultaController->add_usuario()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

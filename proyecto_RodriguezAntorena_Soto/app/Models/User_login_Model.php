@@ -3,7 +3,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Registro_usuario_Model extends Model
+class User_login_Model extends Model
 {
     protected $table      = 'registrousuario';
     protected $primaryKey = 'id_usuario';
@@ -42,4 +42,3 @@ class Registro_usuario_Model extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 }
-

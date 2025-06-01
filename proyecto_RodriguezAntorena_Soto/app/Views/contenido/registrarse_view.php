@@ -46,7 +46,7 @@
 
   <div class="mt-3 mb-3">
     <label for="correo" class="form-label">Direccion de Email</label>
-     <?php echo form_input( ['name' => 'correo', 'id' => 'correo','type'=> 'email','class'=>'form-control', 'rows'=>'3', 'placeholder' => 'Ingrese su dirección de email', 'value'=> set_value('correo')]);?>
+     <?php echo form_input( ['name' => 'correoUs', 'id' => 'correoUs','type'=> 'email','class'=>'form-control', 'rows'=>'3', 'placeholder' => 'Ingrese su dirección de email', 'value'=> set_value('correoUs')]);?>
   </div>
 
   <div class=" mb-3">
