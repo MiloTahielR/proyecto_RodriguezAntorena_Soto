@@ -1,0 +1,83 @@
+DEBUG - 2025-06-03 11:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-03 11:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 11:51:04 --> Error: Class "App\Models\Categoria_Model" not found
+[Method: GET, Route: agregar]
+in APPPATH\Controllers\ProductosController.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 11:56:26 --> ErrorException: Undefined variable $categoria_Model
+[Method: GET, Route: agregar]
+in APPPATH\Controllers\ProductosController.php on line 93.
+ 1 APPPATH\Controllers\ProductosController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria_Model', 'C:\\xampp\\htdocs\\proyecto_RodriguezAntorena_Soto\\app\\Controllers\\ProductosController.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 11:58:05 --> ErrorException: Undefined variable $Categoria_Model
+[Method: GET, Route: agregar]
+in APPPATH\Controllers\ProductosController.php on line 93.
+ 1 APPPATH\Controllers\ProductosController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Categoria_Model', 'C:\\xampp\\htdocs\\proyecto_RodriguezAntorena_Soto\\app\\Controllers\\ProductosController.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 12:03:12 --> ErrorException: Undefined variable $Categoria_Model
+[Method: GET, Route: agregar]
+in APPPATH\Controllers\ProductosController.php on line 93.
+ 1 APPPATH\Controllers\ProductosController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Categoria_Model', 'C:\\xampp\\htdocs\\proyecto_RodriguezAntorena_Soto\\app\\Controllers\\ProductosController.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 12:05:38 --> ErrorException: Undefined variable $Categoria_Model
+[Method: GET, Route: agregar]
+in APPPATH\Controllers\ProductosController.php on line 93.
+ 1 APPPATH\Controllers\ProductosController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Categoria_Model', 'C:\\xampp\\htdocs\\proyecto_RodriguezAntorena_Soto\\app\\Controllers\\ProductosController.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-03 12:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 12:06:15 --> ParseError: syntax error, unexpected token "=", expecting ")"
+[Method: GET, Route: agregar]
+in APPPATH\Views\contenidoAdm\agregar_prod_view.php on line 75.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Views/contenidoAdm/agregar_prod_view.php', [], true)
+ 3 APPPATH\Controllers\ProductosController.php(95): view('Views/contenidoAdm/agregar_prod_view.php')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-03 12:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 12:29:41 --> ParseError: syntax error, unexpected token "=", expecting ")"
+[Method: GET, Route: agregar]
+in APPPATH\Views\contenidoAdm\agregar_prod_view.php on line 75.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Views/contenidoAdm/agregar_prod_view.php', [], true)
+ 3 APPPATH\Controllers\ProductosController.php(95): view('Views/contenidoAdm/agregar_prod_view.php')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductosController->form_add_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

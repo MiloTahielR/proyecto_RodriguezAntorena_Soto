@@ -217,6 +217,19 @@ if(!$validation-> withRequest($request)->run()){
             return redirect()->route('login_cliente')->with('ingreso_mensaje','Usuario y/o contraseña incorrecto!');
             }
         }
+ ////7FIN LOGGIN
 
-            ////7FIN LOGGIN
+ //FUNC CERRAR SESION
+
+ public function cerrar_sesion(){
+
+    $session = session();
+    $session->destroy();
+    return redirect()->route('login_cliente');
+ }
+
+ public function admin(){
+    $data['titulo']='Index';
+    return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_admin_view.php').view('Views/contenido/iniciarSesion_view.php').view('Views/plantillas/footer_view.php'); 
+ }
 }

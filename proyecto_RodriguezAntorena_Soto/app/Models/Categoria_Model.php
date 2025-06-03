@@ -3,17 +3,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User_login_Model extends Model
+class Categoria_Model extends Model
 {
-    protected $table      = 'registrousuario';
-    protected $primaryKey = 'id_usuario';
+    protected $table      = 'categoria_productos';
+    protected $primaryKey = 'id_categoria';
 
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nombre_usuario','apellido_usuario','dni_usuario','telefono_usuario','correo_usuario','contraseña_usuario', 'estado_usuario','perfil_id'];
+    protected $allowedFields = ['nombre_categoria'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

@@ -59,6 +59,13 @@ class Home extends BaseController
                         
     }
 
+    public function loginAdmin()
+    {   
+        $data['titulo']= "Login Admin";
+        return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_admin_view.php').view('Views/contenidoAdmin/agregar_prod_view.php').view('Views/plantillas/footer_view.php'); 
+                        
+    }
+
     /*public function login()
     {   
         $data['titulo']= "Login";
