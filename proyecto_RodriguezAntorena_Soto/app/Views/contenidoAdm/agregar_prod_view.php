@@ -12,7 +12,7 @@
     echo session('mensajeAddProducto'); // <!-- aca seria el sesion del adminittrador -->
 }?>
 
-<?php echo form_open('insertar_prod'); ?> <!-- como esta en el nav de la tabla ? -->
+<?php echo form_open_multipart('insertar_prod'); ?> <!-- como esta en el nav de la tabla ? -->
 
  <div class=" mt-3 mb-3 mx-auto bs-dark-border-subtle Skorial_Abel"  style= "max-width: 50rem  ">
 
@@ -72,7 +72,7 @@
      </div>
 
      <div class="mb-3">
-     <?php echo form_submit('agregarProd','Cargar producto','class'='btn btn-success');?>
+     <?php echo form_submit('agregarProd','Cargar producto',"'class'='btn btn-success'");?>
     </div>
 </form> 
 

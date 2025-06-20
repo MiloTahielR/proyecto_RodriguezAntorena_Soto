@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('nosotros', 'Home::somos');
 
-$routes->get('productos', 'Home::productos');
+
 $routes->get('comercializacion', 'Home::comerc');
 $routes->get('terminos', 'Home::termUso');
 
@@ -26,11 +26,31 @@ $routes->post('registrar_usuario', 'UsuarioController::add_usuario');
 $routes->get('login_cliente', 'Home::iniciarSesion');
 $routes->post('verificar_usuario', 'UsuarioController::buscar_usuario');
 $routes->get('logout', 'UsuarioController::cerrar_sesion');
-$routes->post('user_admin', 'UsuarioController::admin');
+$routes->get('user_admin', 'UsuarioController::admin');
+$routes->get('generar_hash', 'UsuarioController::generar_hash_admin');
 
 $routes->get('agregar', 'ProductosController::form_add_producto');
 $routes->post('insertar_prod', 'ProductosController::add_producto');
 
+$routes->get('lista_productos', 'ProductosController::listar_productos');
+$routes->get('lista_catalogo', 'ProductosController::listar_catalogo');
+$routes->get('lista_consultas', 'UsuarioController::listar_consultas');
+$routes->get('lista_ventas', 'VentasController::listar_ventas');
+
+$routes->get('gestionar', 'ProductosController::gestionar_productos');
+$routes->get('editar/(:num)', 'ProductosController::editar_productos/$1');
+$routes->post('actualizar', 'ProductosController::actualizar_productos');
+
+$routes->get('activar/(:num)', 'ProductosController::activar_productos/$1');
+$routes->get('eliminar/(:num)', 'ProductosController::eliminar_productos/$1');
 
 
+$routes->get('ver_carrito', 'CarritoController::ver_carrito');
+$routes->post('add_carrito', 'CarritoController::agregar_carrito');
 
+$routes->get('vaciar_carrito/(:any)', 'CarritoController::eliminar_carrito_all/$1');
+$routes->get('eliminar_item/(:any)', 'CarritoController::eliminar_carrito/$1');
+
+//$routes->get('ventas', 'CarritoController::guardar_venta');
+$routes->post('guardar_venta', 'CarritoController::guardar_venta');
+$routes->get('detalle_venta/(:num)', 'VentasController::detalle_venta/$1');

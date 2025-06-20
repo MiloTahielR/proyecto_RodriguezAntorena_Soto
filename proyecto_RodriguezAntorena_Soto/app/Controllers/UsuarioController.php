@@ -7,7 +7,7 @@ use App\Models\Registro_usuario_Model;
 
 class UsuarioController extends BaseController
 {
-
+// PARA AGREGAR CONSULTA
 public function add_consulta()
 {
 
@@ -20,6 +20,7 @@ public function add_consulta()
          'correo' => 'required|valid_email',
          'motivo' => 'required|max_length[100]',
          'consulta' => 'required|max_length[250]|min_length[10]'
+         
     ],
     [   // Errors
         'nomyape' => [
@@ -52,7 +53,8 @@ if ( $validation->withRequest($request)->run() ){
         'nombre_consultas' => $request->getPost('nomyape'),
         'correo_consultas' => $request->getPost('correo'),
         'motivo_consultas' => $request->getPost('motivo'),
-        'texto_consultas' => $request->getPost('consulta') 
+        'texto_consultas' => $request->getPost('consulta'),
+        'fecha_consultas' => date('Y-m-d') 
             ];
 
                $consulta1 = new Consulta_Model();
@@ -64,12 +66,35 @@ if ( $validation->withRequest($request)->run() ){
 
                  $data['titulo'] = 'Consultas';
                 $data['validation'] = $validation->getErrors();
-               return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/consultas_view.php').view('Views/plantillas/footer_view.php'); 
+               return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/consultas_view.php').view('plantillas\footer_admin_view.php'); 
  
 
                 }
 
     }
+//LISTA CONSULTAS
+public function listar_consultas()
+{
+    $consulta_Model = new Consulta_Model();
+    $request = \Config\Services::request();
+
+    $fecha = $request->getGet('fecha'); // toma el valor del buscador
+
+    if ($fecha) {
+        $data['consulta'] = $consulta_Model->where('fecha_consultas', $fecha)->findAll();
+    } else {
+        $data['consulta'] = $consulta_Model->findAll();
+    }
+
+    $data['fecha'] = $fecha;
+    $data['titulo'] = 'Lista de consultas';
+
+    return view('plantillas/header_view.php', $data)
+        .view('plantillas/nav_admin_view.php')
+        .view('contenidoAdm/consultas_adm_view.php')
+        .view('plantillas/footer_view.php');
+}
+
 
 
 // PARA REGISTRO USUARIO
@@ -187,7 +212,7 @@ if(!$validation-> withRequest($request)->run()){
 
     $data['titulo']='Iniciar sesion';
     $data['validation']= $validation->getErrors();
-    return view('plantillas/header_view.php', $data).view('plantillas/nav').view('contenido/login_view').view('plantillas/footer.php'); //ver que ruta es login_view
+    return view('plantillas/header_view.php', $data).view('plantillas/nav_view.php').view('contenido/iniciarSesion_view.php').view('plantillas/footer_admin_view.php'); 
 }
     $mail = $request->getPost('correoUs');
     $pass= $request-> getPost('contrasenia');
@@ -200,7 +225,7 @@ if(!$validation-> withRequest($request)->run()){
                 'id'=> $user['id_usuario'],
                 'nombre'=> $user['nombre_usuario'],
                 'apellido'=> $user['apellido_usuario'],
-                'perfi'=> $user['perfil_id'],
+                'perfil'=> $user['perfil_id'],
                 'login_session'=> TRUE
                 ];
         $session->set($data);
@@ -219,6 +244,16 @@ if(!$validation-> withRequest($request)->run()){
         }
  ////7FIN LOGGIN
 
+ public function generar_hash_admin()
+{
+    // Solo para uso temporal y manual
+    $clave_plana = 'pepeadmin1234'; // Cambiá por la clave que quieras
+    $hash = password_hash($clave_plana, PASSWORD_DEFAULT);
+
+    echo "Contraseña original: $clave_plana<br>";
+    echo "Hash generado:<br><textarea cols='80' rows='2'>$hash</textarea>";
+}
+
  //FUNC CERRAR SESION
 
  public function cerrar_sesion(){
@@ -228,8 +263,29 @@ if(!$validation-> withRequest($request)->run()){
     return redirect()->route('login_cliente');
  }
 
+
+//Funcion para verificar los usuarios logeados para navegar en las páginas
+ public function verificarSesion($perfilRequerido = null) {
+    $session = session();
+    // Verificar si hay sesión iniciada
+    if (!$session->has('login_session') || !$session->get('login_session')) {
+        return redirect()->route('login_cliente')->with('ingreso_mensaje','Por favor, inicie sesión para continuar.');;
+    }
+    // Si se pasa un perfil requerido, validar que coincida
+    if ($perfilRequerido !== null && $session->get('perfil') != $perfilRequerido) {
+        // Redirecciona si no tiene el perfil correcto
+        return redirect()->route('/');
+    }
+    return null;
+}
+
  public function admin(){
-    $data['titulo']='Index';
-    return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_admin_view.php').view('Views/contenido/iniciarSesion_view.php').view('Views/plantillas/footer_view.php'); 
+    
+     $verificar = $this->verificarSesion(1); // 1 = admin
+    if ($verificar) return $verificar;
+
+    $data['titulo']='Inicio';
+return view('plantillas/header_view.php', $data).view('plantillas/nav_admin_view.php').view('contenidoAdm/inicio_admin_view.php').view('plantillas\footer_admin_view.php'); 
  }
+
 }

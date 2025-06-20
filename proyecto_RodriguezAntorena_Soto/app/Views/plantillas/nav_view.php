@@ -21,10 +21,10 @@
             Productos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?php echo base_url('productos');?>">Ver todos</a></li>
-            <li><a class="dropdown-item" href="#">Collares</a></li>
-            <li><a class="dropdown-item" href="#">Aros</a></li>
-            <li><a class="dropdown-item" href="#">Otros</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('lista_catalogo');?>">Ver todos</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('lista_catalogo'.'#collares');?>">Collares</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('lista_catalogo'.'#aros');?>">Aros</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('lista_catalogo'.'#otros');?>">Otros</a></li>
           </ul>
         </li>
         <li class="nav-item">

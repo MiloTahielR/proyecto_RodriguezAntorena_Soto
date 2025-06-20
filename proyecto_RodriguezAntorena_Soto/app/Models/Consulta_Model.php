@@ -12,8 +12,8 @@
     
         protected $returnType     = 'array';
         protected $useSoftDeletes = false;
-    
-        protected $allowedFields = ['nombre_consultas','correo_consultas','motivo_consultas','texto_consultas'];
+        protected $useTimestamps = false;
+        protected $allowedFields = ['nombre_consultas','correo_consultas','motivo_consultas','texto_consultas','fecha_consultas'];
     
     }
 

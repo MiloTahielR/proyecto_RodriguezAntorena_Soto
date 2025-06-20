@@ -21,7 +21,7 @@ class Home extends BaseController
     public function productos()
     {   
         $data['titulo']= "Productos";
-        return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/productos_view.php').view('Views/plantillas/footer_view.php'); 
+        return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/catalogo_view.php').view('Views/plantillas/footer_view.php'); 
         
     }
 
@@ -54,6 +54,7 @@ class Home extends BaseController
 
     public function iniciarSesion()
     {   
+    
         $data['titulo']= "Iniciar sesion";
         return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/iniciarSesion_view.php').view('Views/plantillas/footer_view.php'); 
                         
@@ -65,13 +66,6 @@ class Home extends BaseController
         return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_admin_view.php').view('Views/contenidoAdmin/agregar_prod_view.php').view('Views/plantillas/footer_view.php'); 
                         
     }
-
-    /*public function login()
-    {   
-        $data['titulo']= "Login";
-        return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/inicio_view.php').view('Views/plantillas/footer_view.php'); 
-                                                                                                                         
-    }*/
 
 }
 
