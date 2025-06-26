@@ -83,5 +83,3 @@
 
 </html>
 
-<!-- aca esta la funcion editar producto--> tenemos nav de admin ?? cambiar ruta
- 

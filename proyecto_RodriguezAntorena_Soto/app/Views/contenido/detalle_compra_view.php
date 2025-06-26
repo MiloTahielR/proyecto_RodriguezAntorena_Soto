@@ -1,8 +1,8 @@
-<h3 class="mb-3 text-uppercase Skorial_Abel w-20px text-center mt-3 pt-3">DETALLE DE PRODUCTOS</h3>
+<h3 class="mb-3 text-uppercase Skorial_Abel w-20px text-center mt-3 pt-3">DETALLE DE COMPRA</h3>
 <div class="container">
 
     <div class="mb-4">
-        <p><strong>Fecha de venta:</strong> <?= esc($venta['fecha_venta']) ?></p>
+        <p><strong>Fecha de compra:</strong> <?= esc($venta['fecha_venta']) ?></p>
         <p><strong>Forma de pago:</strong>
             <?= $venta['forma_pago_venta'] == 1 ? 'Mercado Pago' : 'Tarjeta Débito/Crédito' ?>
         </p>
@@ -24,6 +24,7 @@
             </tr>
         </thead>
         <tbody>
+           
             <?php
                 $i = 1;
                 foreach ($detalles as $item): ?>

@@ -17,7 +17,7 @@
   <div class="mb-3">
     <label for="correoUs" class="form-label">E-mail</label>
     <?php echo form_input( ['name' => 'correoUs', 'id' => 'correo','type'=> 'text','class'=>'form-control', 'placeholder' => 'ejemplo@hotmail.com', 'value'=> set_value('correoUs')]);?>
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div id="emailHelp" class="form-text"></div>
   </div>
   <div class="mb-3">
     <label for="contrasenia" class="form-label">Contraseña</label>

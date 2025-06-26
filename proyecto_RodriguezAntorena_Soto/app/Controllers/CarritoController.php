@@ -12,7 +12,7 @@ class CarritoController extends BaseController{
 //  <!-- FUNCION VER CARRITO-->
    
     public function ver_carrito(){
-         $verificar = $this->verificarSesion(2); // 1 = admin
+         $verificar = $this->verificarSesion(2); 
     if ($verificar) return $verificar;
 
      $cart = \Config\Services::cart();
@@ -65,8 +65,7 @@ public function guardar_venta(){
 );
 
 if ( $validation->withRequest($request)->run() ){
-       // 'forma_pago_venta' => $request->getPost('formaPago');
-        //'envio_venta'=> $request->getPost('envioVenta');
+      
  
         $cart1 = $cart ->contents();
         $total = 0;

@@ -148,6 +148,8 @@ public function gestionar_productos() {
 
     return view('Views/plantillas/header_view.php', $data).view('Views/plantillas/nav_admin_view.php').view('Views/contenidoAdm/gestion_prod_view.php').view('plantillas/footer_admin_view.php');
 }
+
+
 public function editar_productos($id=null){
  $verificar = $this->verificarSesion(1); // 1 = admin
     if ($verificar) return $verificar;
@@ -161,88 +163,87 @@ $data['titulo']= 'Edicion Producto';
 return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_admin_view.php').view('Views/contenidoAdm/editar_prod_view.php').view('plantillas\footer_admin_view.php');
 }
 
-public function actualizar_productos(){
+public function actualizar_productos() {
+    $validation = \Config\Services::validation();
+    $request = \Config\Services::request();
 
-$validation = \Config\Services::validation();
-  $request = \Config\Services::request();
-
-$validation->setRules(
-    [
-         'nombreProd' => 'required|max_length[150]',
-         'cantProd' => 'required|is_natural',
-         'precioProd' => 'required|numeric|greater_than[0]',
-         'dispProd' => 'required|in_list[true,false]',
-         'categProd' => 'required|in_list[1,2,3]', 
-         'descripcionProd' => 'required|min_length[20]',
-         //LA IMAGEN puede o no actualizarse, entonces hay que preguntar si quiere o no actualizar la imagen(preguntar chatgpt)
-         //'imgProd' => 'uploaded[imgProd]|is_image[imgProd]|max_size[imgProd,2048]',
-         
-    ],
-// Errors
-   $errors = [
-'nombreProd' => [
-'required' => 'El nombre es requerido',
-'max_length' => 'El nombre debe tener como máximo 150 caracteres'
+    $validation->setRules(
+        [
+            'nombreProd' => 'required|max_length[150]',
+            'cantProd' => 'required|is_natural',
+            'precioProd' => 'required|numeric|greater_than[0]',
+            'dispProd' => 'required|in_list[true,false]',
+            'categProd' => 'required|in_list[1,2,3]',
+            'descripcionProd' => 'required|min_length[20]',
+           
         ],
-'cantProd' => [
-'required' => 'La cantidad es obligatoria',
-'is_natural' => 'La cantidad debe ser un número entero positivo'
-        ],
-'precioProd' => [
-'required' => 'El precio es obligatorio',
-'numeric' => 'El precio debe ser un número',
-'greater_than' => 'El precio debe ser mayor a 0'
-        ],
-'dispProd' => [
-'required' => 'Debe seleccionar una disponibilidad',
-'in_list' => 'Valor inválido para la disponibilidad'
-        ],
-'categProd' => [
-'required' => 'Debe seleccionar una categoría',
-'in_list' => 'La categoría seleccionada no es válida'
-        ],
-'descripcion' => [
-'required' => 'La descripción es obligatoria',
-'min_length' => 'La descripción debe tener al menos 20 caracteres'
-        ],
+        [ // errors
+            'nombreProd' => [
+                'required' => 'El nombre es requerido',
+                'max_length' => 'El nombre debe tener como máximo 150 caracteres'
+            ],
+            'cantProd' => [
+                'required' => 'La cantidad es obligatoria',
+                'is_natural' => 'La cantidad debe ser un número entero positivo'
+            ],
+            'precioProd' => [
+                'required' => 'El precio es obligatorio',
+                'numeric' => 'El precio debe ser un número',
+                'greater_than' => 'El precio debe ser mayor a 0'
+            ],
+            'dispProd' => [
+                'required' => 'Debe seleccionar una disponibilidad',
+                'in_list' => 'Valor inválido para la disponibilidad'
+            ],
+            'categProd' => [
+                'required' => 'Debe seleccionar una categoría',
+                'in_list' => 'La categoría seleccionada no es válida'
+            ],
+            'descripcionProd' => [
+                'required' => 'La descripción es obligatoria',
+                'min_length' => 'La descripción debe tener al menos 20 caracteres'
+            ],
+        ]
+    );
 
-    ]
-);
-$id = $request->getPost('id');
+    $id = $request->getPost('id');
+    $productoModel = new Productos_Model();
+    $productoActual = $productoModel->find($id); 
 
-if ($validation->withRequest($this->request)->run()) {
-// Acá también me fijo si subio nueva imagen, ahi si hago esto
+    if ($validation->withRequest($request)->run()) {
+        $img = $request->getFile('imgProd');
+        $nombreImagen = $productoActual['imagen_producto']; 
 
-   // $img = $this->request->getFile('imgProd');
+        // Si subió nueva imagen y es válida
+        if ($img && $img->isValid() && !$img->hasMoved()) {
+            $nombreImagen = $img->getRandomName();
+            $img->move(ROOTPATH . 'assets/upload', $nombreImagen);
+        }
 
-    //$nombre_aleatorio = $img->getRandomName();
-   // $img->move(ROOTPATH.'public/assets/upload', $nombre_aleatorio);
-
-$data = [
-        'nombre_producto'=> $request->getPost('nombreProd'),
-        'cantidad_producto' =>  $request->getPost('cantProd'),
-         'precio_producto' =>  $request->getPost('precioProd'),
-         'disponibilidad_producto' =>  $request->getPost('dispProd'),
-         'producto_categoria' => $request->getPost('categProd'),
-         'descripcion' =>  $request->getPost('descripcionProd'),
-         //'imagen_producto' => $nombre_aleatorio
+        $data = [
+            'nombre_producto' => $request->getPost('nombreProd'),
+            'cantidad_producto' => $request->getPost('cantProd'),
+            'precio_producto' => $request->getPost('precioProd'),
+            'disponibilidad_producto' => $request->getPost('dispProd'),
+            'producto_categoria' => $request->getPost('categProd'),
+            'descripcion' => $request->getPost('descripcionProd'),
+            'imagen_producto' => $nombreImagen
         ];
 
-$producto = new Productos_Model();
-$producto->update($id, $data);
- return redirect()->route('gestionar')->with('mensajeActualizar', 'Producto actualizado correctamente!');
-} else {
-   
+        $productoModel->update($id, $data);
 
-$productos_Model = new Productos_Model();
-$categoria = new Categoria_Model();
-$data['categorias'] = $categoria->findAll();
-$data['producto'] = $productos_Model->where('id_producto', $id)->first(); 
-$data['titulo']= 'Edicion Producto';
-    $data['validation'] = $validation->getErrors();
-    return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_admin_view.php').view('Views/contenidoAdm/editar_prod_view.php');
+        return redirect()->route('gestionar')->with('mensajeActualizar', 'Producto actualizado correctamente!');
+    } else {
+        $categoria = new Categoria_Model();
+        $data['categorias'] = $categoria->findAll();
+        $data['producto'] = $productoModel->find($id);
+        $data['titulo'] = 'Edición Producto';
+        $data['validation'] = $validation->getErrors();
+
+        return view('Views/plantillas/header_view.php', $data). view('Views/plantillas/nav_admin_view.php'). view('Views/contenidoAdm/editar_prod_view.php'). view('plantillas/footer_admin_view.php');
     }
 }
+
 
 public function eliminar_productos($id=null){
 

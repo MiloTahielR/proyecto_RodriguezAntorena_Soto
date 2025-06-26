@@ -4,12 +4,27 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index(): string
-    {
-        $data['titulo']= "Skorial";
-        return view('Views/plantillas/header_view.php',$data).view('Views/plantillas/nav_view.php').view('Views/contenido/inicio_view.php').view('Views/plantillas/footer_view.php'); 
-        
-    }
+    public function index() {
+    $productoModel = new \App\Models\Productos_Model();
+
+  
+    $data['producto'] = $productoModel
+        ->where('disponibilidad_producto', 'true')->orderBy('id_producto', 'DESC')->findAll(6);
+
+  
+    $data['producto_aros'] = $productoModel
+        ->where('producto_categoria', 1)->where('disponibilidad_producto', 'true')->orderBy('id_producto', 'DESC')->first();
+
+    $data['producto_collares'] = $productoModel
+        ->where('producto_categoria', 2)->where('disponibilidad_producto', 'true')->orderBy('id_producto', 'DESC')->first();
+
+    $data['producto_otros'] = $productoModel
+        ->where('producto_categoria', 3)->where('disponibilidad_producto', 'true')->orderBy('id_producto', 'DESC')->first();
+
+    $data['titulo'] = 'Inicio';
+
+    return view('Views/plantillas/header_view.php', $data). view('Views/plantillas/nav_view.php'). view('Views/contenido/inicio_view.php'). view('Views/plantillas/footer_view.php');
+}
 
     public function somos()
     { 

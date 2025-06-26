@@ -30,110 +30,71 @@
 </div><!-- Carrousel finaliza -->
 <div class="container py-5">
 
-    <!-- Subtítulo NUEVA COLECCIÓN -->
+    <!-- SECCIÓN NUEVA COLECCIÓN -->
     <h3 class="text-center mb-4 Skorial_Abel">NUEVA COLECCIÓN 2025</h2>
 
-    <!-- Primera fila de cards -->
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/IMG_5790.JPG" class="card-img-top hover-zoom" alt="Producto 1">
-          <div class="card-body p-0 text-center">
-            <h5 class="card-title w-100 p-0 text-center ">BRIZZ</h5>
-            <p class="parrafo-precios-card">$12000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/IMG_5792.JPG" class="card-img-top hover-zoom" alt="Producto 2">
-          <div class="card-body text-center">
-            <h5 class="card-title w-100 p-0 ">KALA</h5>
-            <p class="parrafo-precios-card">$8000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/IMG_5783.JPG" class="card-img-top hover-zoom" alt="Producto 3">
-          <div class="card-body p-0 text-center">
-            <h5 class="card-title w-100 p-0">REN</h5>
-            <p class="parrafo-precios-card">$12000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver más</a>
-          </div>
+
+<div class="row g-4">
+  <?php foreach($producto as $row): ?>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 rounded-0">
+        <img src="<?= base_url('assets/upload/'.$row['imagen_producto']) ?>" class="card-img-top hover-zoom" alt="<?= esc($row['nombre_producto']) ?>">
+        <div class="card-body p-0 text-center">
+          <h5 class="card-title w-100 p-0"><?= esc($row['nombre_producto']) ?></h5>
+          <a href="<?= base_url('lista_catalogo') ?>" class="btn btn-dark rounded-0 mt-2">Ver más</a>
         </div>
       </div>
     </div>
+  <?php endforeach; ?>
+</div>
 
-    <!-- Subtítulo NUESTROS DISEÑOS -->
-    <h3 class="text-center my-5 Skorial_Abel">NUESTROS DISEÑOS</h2>
 
-    <!-- Segunda y tercera fila de cards -->
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/2colWater.jpg" class="card-img-top hover-zoom" alt="Diseño 1">
-          <div class="card-body text-center ">
-            <h5 class="card-title text-decoration-none">WETT</h5>
-            <p>$15000,00</p>
-            <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
-          </div>
+    <!-- SECCIÓN NUESTROS PRODUCTOS -->
+<h3 class="text-center my-5 Skorial_Abel">NUESTROS PRODUCTOS</h3>
+<div class="row g-4">
+  <!-- AROS -->
+  <div class="col-md-4">
+    <?php if (!empty($producto_aros)): ?>
+      <div class="card h-100 border-0 rounded-0">
+        <img src="<?= base_url('assets/upload/'.$producto_aros['imagen_producto']) ?>" class="card-img-top hover-zoom" alt="<?= esc($producto_aros['nombre_producto']) ?>">
+        <div class="card-body text-center">
+          <h5 class="card-title text-decoration-none">Aros</h5>
+          <p class="parrafo-precios-card"><?= esc($producto_aros['nombre_producto']) ?></p>
+          <a href="<?= base_url('lista_catalogo#aros') ?>" class="btn btn-dark rounded-0">Ver diseño</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/2col saiki.jpg" class="card-img-top hover-zoom" alt="Diseño 2">
-          <div class="card-body text-center">
-            <h5 class="card-title text-decoration-none">SAIKI</h5>
-            <p class="parrafo-precios-card">$18000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
-          </div>
+    <?php endif; ?>
+  </div>
+
+  <!-- COLLARES -->
+  <div class="col-md-4">
+    <?php if (!empty($producto_collares)): ?>
+      <div class="card h-100 border-0 rounded-0">
+        <img src="<?= base_url('assets/upload/'.$producto_collares['imagen_producto']) ?>" class="card-img-top hover-zoom" alt="<?= esc($producto_collares['nombre_producto']) ?>">
+        <div class="card-body text-center">
+          <h5 class="card-title text-decoration-none">Collares</h5>
+          <p class="parrafo-precios-card"><?= esc($producto_collares['nombre_producto']) ?></p>
+          <a href="<?= base_url('lista_catalogo#collares') ?>" class="btn btn-dark rounded-0">Ver diseño</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/2colmariposas.jpg" class="card-img-top hover-zoom" alt="Diseño 3">
-          <div class="card-body text-center">
-            <h5 class="card-title text-decoration-none ">BUTTERFLY</h5>
-            <p class="parrafo-precios-card">$16000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
-          </div>
+    <?php endif; ?>
+  </div>
+
+  <!-- OTROS -->
+  <div class="col-md-4">
+    <?php if (!empty($producto_otros)): ?>
+      <div class="card h-100 border-0 rounded-0">
+        <img src="<?= base_url('assets/upload/'.$producto_otros['imagen_producto']) ?>" class="card-img-top hover-zoom" alt="<?= esc($producto_otros['nombre_producto']) ?>">
+        <div class="card-body text-center">
+          <h5 class="card-title text-decoration-none">Otros</h5>
+          <p class="parrafo-precios-card"><?= esc($producto_otros['nombre_producto']) ?></p>
+          <a href="<?= base_url('lista_catalogo#otros') ?>" class="btn btn-dark rounded-0">Ver diseño</a>
         </div>
       </div>
-      <!-- Otra fila -->
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/3colPanterNana.jpg" class="card-img-top hover-zoom" alt="Diseño 4">
-          <div class="card-body text-center">
-            <h5 class="card-title text-decoration-none">PANTER NANA</h5>
-            <p class="parrafo-precios-card">$15000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/3colTaio.jpg" class="card-img-top hover-zoom" alt="Diseño 5">
-          <div class="card-body text-center">
-            <h5 class="card-title text-decoration-none ">TAIO</h5>
-            <p class="parrafo-precios-card">$12000,00</p>
-            <a href="#" class="btn btn-dark rounded-0">Ver diseño</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="assets/img/3colAros.jpg" class="card-img-top hover-zoom" alt="Diseño 6">
-          <div class="card-body text-center">
-            <h5 class="card-title text-decoration-none">AROS</h5>
-            <p class="parrafo-precios-card">$4000,00</p>
-            <a href="#" class="btn btn-dark rounded-0 ">Ver diseño</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php endif; ?>
+  </div>
+</div>
+
 
   </div>
   

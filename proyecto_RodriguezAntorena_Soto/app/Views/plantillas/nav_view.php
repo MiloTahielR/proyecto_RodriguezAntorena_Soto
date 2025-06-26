@@ -45,12 +45,17 @@
             <a class="nav-link navbar-paginas text-light" href="<?php echo base_url('ver_carrito'); ?>">
               <i class="fas fa-shopping-cart"></i> Carrito
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-paginas text-light" href="#">
-              <?php echo session('apellido'); ?>
-            </a>
-          </li>
+          </li>   
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navbar-paginas text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <?php echo session('apellido'); ?>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?php echo base_url('mi_perfil');?>">Editar perfil</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('ver_compras_user');?>">Ver compras</a></li>
+          </ul>
+        </li>
+
           <li class="nav-item">
             <a class="nav-link navbar-paginas text-light" href="<?php echo base_url('logout'); ?>">Salir</a>
           </li>
@@ -71,3 +76,4 @@
   </div>
   </div>
 </nav>
+

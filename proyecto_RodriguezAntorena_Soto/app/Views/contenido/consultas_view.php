@@ -1,11 +1,4 @@
-<!-- ACA EL FORMULARIO PARA CONSULTAS
-  el formi¿ulario debe estar dentro de form con todas las funciones para guardar 
-  la informacion del usuario, un ejemplo esta en boostrap form overview 
-  debe tener boton submit / el el for y name cambiar el nombre "mas simpre" para 
-  luego capturar el dato
-  
-  lo que decia form que copiamos de Bootstrap se borra y se reemplaza por el echo form_open de codeigniter-->
-  <div class=" mt-3 mb-3 mx-auto bs-dark-border-subtle Skorial_Abel"  style= "max-width: 50rem  ">
+<div class=" mt-3 mb-3 mx-auto bs-dark-border-subtle Skorial_Abel"  style= "max-width: 50rem  ">
    
 <?php if (! empty($validation)): ?>
     <div class="alert alert-danger" role="alert">

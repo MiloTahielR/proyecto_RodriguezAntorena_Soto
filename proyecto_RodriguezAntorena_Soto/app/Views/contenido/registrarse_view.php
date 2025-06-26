@@ -1,10 +1,4 @@
-<!-- ACA EL FORMULARIO PARA NUEVOS USUARIOS 
-  el formi¿ulario debe estar dentro de form con todas las funciones para guardar 
-  la informacion del usuario, un ejemplo esta en boostrap form overview 
-  debe tener boton submit / el el for y name cambiar el nombre "mas simple" para 
-  luego capturar el dato -->
-
-  <?php if (! empty($validation)): ?>
+<?php if (! empty($validation)): ?>
     <div class="alert alert-danger" role="alert">
         <ul>
         <?php foreach ($validation as $error): ?>

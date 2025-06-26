@@ -9,10 +9,10 @@
 <?php endif ?>
 
 <?php if (session('mensajeAddProducto')) {  
-    echo session('mensajeAddProducto'); // <!-- aca seria el sesion del adminittrador -->
+    echo session('mensajeAddProducto'); 
 }?>
 
-<?php echo form_open_multipart('insertar_prod'); ?> <!-- como esta en el nav de la tabla ? -->
+<?php echo form_open_multipart('insertar_prod'); ?> 
 
  <div class=" mt-3 mb-3 mx-auto bs-dark-border-subtle Skorial_Abel"  style= "max-width: 50rem  ">
 

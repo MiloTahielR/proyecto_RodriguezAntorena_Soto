@@ -157,9 +157,8 @@ public function add_usuario()
    );
 
  if ($validation->withRequest($request)->run() ){
-
+  
      $data = [
-       
         'nombre_usuario' => $request->getPost('nombre'),
         'apellido_usuario' => $request->getPost('apellido'),
         'dni_usuario' => $request->getPost('dni'),
@@ -170,9 +169,27 @@ public function add_usuario()
         'perfil_id' => 2
          
             ];
-
+                
                $usuarioRegistro = new Registro_usuario_Model();
-               $usuarioRegistro->insert($data);
+                $usuarioRegistro->insert($data);
+                
+                $idUsuario = $usuarioRegistro->getInsertID();
+
+
+// Obtengo el ID recién generado
+       
+
+        // Guardo los datos en sesión
+        $session->set([
+            'id_usuario' => $idUsuario,
+            'nombre_usuario' => $data['nombre_usuario'],
+            'apellido_usuario' => $data['apellido_usuario'],
+            'correo_usuario' => $data['correo_usuario'],
+            'perfil_id' => $data['perfil_id'],
+            'logged_in' => true
+        ]);
+
+
 
               return redirect()->route('registro_usuario')->with('registro_mensaje', 'Su registro se envió exitosamente!');
                         
@@ -191,7 +208,7 @@ public function buscar_usuario() {
             $validation = \Config\Services::validation(); //SON INSTANCIAS
             $request = \Config\Services::request();
             $session = session();
-
+    
     //reglas de validacion que se deben cumplir 
         $validation->setRules(
             [
@@ -229,6 +246,7 @@ if(!$validation-> withRequest($request)->run()){
                 'login_session'=> TRUE
                 ];
         $session->set($data);
+    
         switch($user['perfil_id']){
             case'1':
                 return redirect()->route('user_admin');
@@ -287,5 +305,67 @@ if(!$validation-> withRequest($request)->run()){
     $data['titulo']='Inicio';
 return view('plantillas/header_view.php', $data).view('plantillas/nav_admin_view.php').view('contenidoAdm/inicio_admin_view.php').view('plantillas\footer_admin_view.php'); 
  }
+
+
+
+//FUNC EDITAR PERFIL DEL USUARIO
+public function editar_usuario()
+{
+    $session = session();
+    $usuarioId = $session->get('id');
+
+    $usuarioModel = new Registro_usuario_Model();
+    $data['usuario'] = $usuarioModel->find($usuarioId);
+    $data['titulo'] = 'Editar Perfil';
+    $data['validation'] = [];
+
+    return view('Views/plantillas/header_view.php', $data). view('Views/plantillas/nav_view.php'). view('Views/contenido/ver_perfil_view.php'). view('Views/plantillas/footer_view.php');
+}
+
+public function actualizar_usuario(){
+     $verificar = $this->verificarSesion(2); 
+    if ($verificar) return $verificar;
+
+    $session = \Config\Services::session();
+    $request = \Config\Services::request();
+    $validation = \Config\Services::validation();
+    $usuarioId = $session->get('id');
+
+    $validation->setRules([
+        'nombre'   => 'required|max_length[150]',
+        'apellido' => 'required|max_length[150]',
+        'telefono' => 'required|max_length[100]|is_natural',
+    ], [
+        'nombre' => ['required' => 'El nombre es requerido'],
+        'apellido' => ['required' => 'El apellido es requerido'],
+        'telefono' => [
+            'required' => 'El teléfono es requerido',
+            'is_natural' => 'Debe ser numérico'
+        ]
+    ]);
+
+    if ($validation->withRequest($request)->run()) {
+        $usuarioModel = new Registro_usuario_Model();
+
+        $data = [
+            'nombre_usuario'   => $request->getPost('nombre'),
+            'apellido_usuario' => $request->getPost('apellido'),
+            'telefono_usuario' => $request->getPost('telefono'),
+        ];
+
+        $usuarioModel->update($usuarioId, $data);
+
+        return redirect()->route('mi_perfil')->with('mensajeActualizac', 'Datos actualizados correctamente.');
+    } else {
+        // Si falla, traemos los datos del usuario para recargar el formulario
+        $usuarioModel = new Registro_usuario_Model();
+
+        $data['usuario'] = $usuarioModel->where('id_usuario', $usuarioId)->first();
+        $data['validation'] = $validation->getErrors();
+        $data['titulo'] = 'Editar Perfil';
+
+        return view('Views/plantillas/header_view.php', $data). view('Views/plantillas/nav_view.php'). view('Views/contenido/ver_perfil_view.php'). view('Views/plantillas/footer_view.php');
+    }
+}
 
 }
